@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- include owl carousel -->
+  <link rel="stylesheet" href="./assets/css/main/owl-carousel/owl.carousel.min.css" />
+
+  <!-- include owl carousel -->
+  <link rel="stylesheet" href="./assets/css/main/main.css" />
+</head>
+<body>
+  
+  <section>
+    <div class="container-fluid">
+      <div id="filters" class="button-group owl-carousel owl-theme">  
+        <button class="button is-checked" data-filter="*">All</button>
+        <button class="button" data-filter=".video">Video</button>
+        <button class="button" data-filter=".islamic">Islamic</button>
+        <button class="button" data-filter=".games">Games</button>
+        <button class="button" data-filter=".music">Music</button>
+        <button class="button" data-filter=".parking">Parking</button>
+      </div>
+
+      <div class="isotope row row-cols-5" id="isotop-container">
+        <div class="col card element-item video" data-category="video">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Video - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item islamic" data-category="Islamic">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Islamic - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item games" data-category="games">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Games - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item music" data-category="music">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item parking" data-category="parking">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parking - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item video" data-category="video">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Video - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item islamic" data-category="Islamic">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Islamic - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item games" data-category="games">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Games - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item music" data-category="music">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item parking" data-category="parking">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parking - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item video" data-category="video">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Video - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item islamic" data-category="Islamic">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Islamic - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item games" data-category="games">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Games - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item music" data-category="music">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item parking" data-category="parking">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parking - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item video" data-category="video">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Video - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item islamic" data-category="Islamic">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Islamic - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item games" data-category="games">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Games - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item music" data-category="music">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item parking" data-category="parking">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parking - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item video" data-category="video">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Video - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item islamic" data-category="Islamic">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Islamic - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item games" data-category="games">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Games - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item music" data-category="music">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item parking" data-category="parking">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parking - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item video" data-category="video">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Video - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item islamic" data-category="Islamic">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Islamic - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item games" data-category="games">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Games - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item music" data-category="music">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item parking" data-category="parking">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parking - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item video" data-category="video">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Video - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item islamic" data-category="Islamic">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Islamic - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item games" data-category="games">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Games - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item music" data-category="music">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+        <div class="col card element-item parking" data-category="parking">
+          <div class="card-img">
+            <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="Card Image">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Parking - Card</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contentModal">Content CTA</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+<div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/GfO-3Oir-qM?&autoplay=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- include jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://npmcdn.com/isotope-layout@2.2.2/dist/isotope.pkgd.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+</body>
+</html>

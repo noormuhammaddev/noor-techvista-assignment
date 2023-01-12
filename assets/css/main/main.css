@@ -1,0 +1,79 @@
+.button-group {
+  max-width: 650px;
+  margin: 20px auto;
+}
+.button-group .button {
+  background-color: #cfd1d1;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 40px;
+  padding: 5px 30px;
+  min-width: 120px;
+}
+.button-group .button:hover {
+  background-color: #818181;
+  color: #ffffff;
+}
+.button-group .button.is-checked {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+.button-group .button:focus {
+  outline: none;
+}
+.button-group .owl-nav button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+}
+.button-group .owl-nav button.owl-prev, .button-group .owl-nav button.owl-next {
+  background: #0a0a0a;
+}
+.button-group .owl-nav button.owl-prev span, .button-group .owl-nav button.owl-next span {
+  font-size: 25px;
+  line-height: 8px;
+  margin-top: -3px;
+  color: #ffffff;
+}
+.button-group .owl-nav button.owl-prev.disabled, .button-group .owl-nav button.owl-next.disabled {
+  background-color: #cfd1d1;
+  cursor: not-allowed;
+}
+.button-group .owl-nav button.owl-prev {
+  right: calc(100% + 20px);
+}
+.button-group .owl-nav button.owl-next {
+  left: calc(100% + 20px);
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.hidden {
+  visibility: hidden;
+  width: 0px !important;
+  height: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.card.element-item {
+  border: none;
+  margin-bottom: 40px;
+}
+.card.element-item .card-img {
+  height: 240px;
+  overflow: hidden;
+}
+.card.element-item .card-img img {
+  width: 100%;
+  min-height: 100%;
+}/*# sourceMappingURL=main.css.map */
